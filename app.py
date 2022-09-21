@@ -6,7 +6,7 @@ import pickle
 app = Flask(__name__)  # initializing a flask app
 
 
-@app.route('/', methods=['GET'])  # route to display the home page
+@app.route('/')  # route to display the home page
 @cross_origin()
 def homePage():
     return render_template("index.html")
